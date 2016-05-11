@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoLIndex"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="LoL Index" Height="1080" Width="1920">
     <Grid>
-        
+        <Image x:Name="Background" HorizontalAlignment="Left" Height="1049" VerticalAlignment="Top" Width="1912" Source="Assets/Background.jpg" Stretch="UniformToFill" Opacity="0.75"/>
+        <Image x:Name="Logo" HorizontalAlignment="Left" Height="310" Margin="562,208,0,0" VerticalAlignment="Top" Width="784" Source="Assets/Logo.png"/>
+        <Button x:Name="EnterButton" Content="Enter" HorizontalAlignment="Left" Margin="810,694,0,0" VerticalAlignment="Top" Width="300" Height="100" FontWeight="Bold" FontSize="68" FontFamily="Global Serif" BorderThickness="5" Background="#BFFFFFFF" BorderBrush="#FF00A5FF" Foreground="#FF00A5FF"/>
     </Grid>
 </Window>
