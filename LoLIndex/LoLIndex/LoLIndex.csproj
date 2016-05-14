@@ -56,6 +56,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\ChampionInfo.cs" />
+    <Compile Include="Services\Requests\DataService.cs" />
+    <Compile Include="Services\Requests\ServiceManager.cs" />
+    <Compile Include="Services\Responses\AllChampions.cs" />
+    <Compile Include="ViewControllers\ViewController.cs" />
     <Compile Include="Views\IndexWindow.xaml.cs">
       <DependentUpon>IndexWindow.xaml</DependentUpon>
     </Compile>
@@ -103,12 +108,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Services\Requests\" />
-    <Folder Include="Services\Responses\" />
-    <Folder Include="ViewControllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Assets\Background.jpg" />
     <Resource Include="Assets\Logo.png" />

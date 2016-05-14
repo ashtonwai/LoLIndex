@@ -1,0 +1,16 @@
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\bin\Debug\LoLIndex.exe.config
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\bin\Debug\LoLIndex.exe
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\bin\Debug\LoLIndex.pdb
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex.csprojResolveAssemblyReference.cache
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\MainWindow.g.cs
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\App.g.cs
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex_MarkupCompile.cache
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex_MarkupCompile.lref
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\MainWindow.baml
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex.g.resources
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex.Properties.Resources.resources
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex.csproj.GenerateResource.Cache
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex.exe
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex.pdb
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\Views\IndexWindow.g.cs
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\Views\IndexWindow.baml
