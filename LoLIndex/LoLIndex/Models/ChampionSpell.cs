@@ -18,11 +18,11 @@ namespace LoLIndex.Models
         [DataMember(Name = "tooltip")]
         public string ToolTip { get; set; }
 
-        [DataMember(Name = "sanitizedtooltip")]
+        [DataMember(Name = "sanitizedTooltip")]
         public string SanitizedToolTip { get; set; }
 
         [DataMember(Name = "leveltip")]
-        public object LevelTip { get; set; }
+        public SpellLevelTip LevelTip { get; set; }
 
         [DataMember(Name = "image")]
         public LoLImage Image { get; set; }
@@ -46,10 +46,10 @@ namespace LoLIndex.Models
         public List<int> Cooldown { get; set; }
 
         [DataMember(Name = "cooldownBurn")]
-        public int CooldownBurn { get; set; }
+        public string CooldownBurn { get; set; }
 
-        [DataMember(Name = "effect")]
-        public List<List<int>> Effect { get; set; }
+        //[DataMember(Name = "effect")]
+        //public List<List<int>> Effect { get; set; }
 
         [DataMember(Name = "effectBurn")]
         public List<string> EffectBurn { get; set; }

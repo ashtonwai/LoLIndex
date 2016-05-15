@@ -59,7 +59,8 @@
     <Compile Include="Models\Champion.cs" />
     <Compile Include="Models\ChampionDetails.cs" />
     <Compile Include="Models\ChampionInfo.cs" />
-    <Compile Include="Models\ChampionList.cs" />
+    <Compile Include="Models\ChampionData.cs" />
+    <Compile Include="Models\ChampionDictionary.cs" />
     <Compile Include="Models\ChampionPassive.cs" />
     <Compile Include="Models\ChampionRecommended.cs" />
     <Compile Include="Models\ChampionSkin.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\LoLImage.cs" />
     <Compile Include="Models\RecommenedBlocks.cs" />
+    <Compile Include="Models\SpellLevelTip.cs" />
     <Compile Include="Models\SpellVar.cs" />
     <Compile Include="Services\Requests\ChampionDetailRequest.cs" />
     <Compile Include="Services\Requests\DataService.cs" />

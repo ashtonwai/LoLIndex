@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoLIndex.Views"
         mc:Ignorable="d"
-        Title="LoL Index" Height="1080" Width="1920">
+        Title="LoL Index" Height="920" Width="1480">
     <Grid>
         <Grid.Background>
             <ImageBrush Stretch="UniformToFill" ImageSource="/LoLIndex;component/Assets/Index_BG.jpg"/>
         </Grid.Background>
-        <WrapPanel x:Name="ChampionsIndex" HorizontalAlignment="Left" Height="1029" Margin="10,10,0,0" VerticalAlignment="Top" Width="1892">
+        <WrapPanel x:Name="ChampionsIndex" HorizontalAlignment="Left" Height="869" Margin="10,10,0,0" VerticalAlignment="Top" Width="1452">
             <!-- CHAMPIONS HERE -->
         </WrapPanel>
 

@@ -1,13 +1,14 @@
 ﻿using LoLIndex.Models;
 using LoLIndex.Services.Requests;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 
 namespace LoLIndex.ViewControllers
 {
     public class ViewController
     {
-        public List<Champion> Champions;
-
         DataService dataService;
         public ViewController()
         {
@@ -16,12 +17,15 @@ namespace LoLIndex.ViewControllers
 
         public List<Champion> AllChampions()
         {
-            Champions = new List<Champion>();
-            ChampionList champList = dataService.GetChampionList();
-            foreach (var champ in champList.Data.Values)
+            List<Champion> Champions = new List<Champion>();
+            ChampionDictionary champList = dataService.GetChampionData().Data;
+            PropertyInfo[] champs = champList.GetType().GetProperties();
+            foreach (var champ in champs)
             {
-                Champions.Add(champ);
+                Champions.Add((Champion)champ.GetValue(champList, null));
             }
+            Champions = Champions.OrderBy(o => o.Key).ToList();
+
             return Champions;
         }
 

@@ -52,9 +52,9 @@ namespace LoLIndex.Models
         public List<ChampionSpell> Spells { get; set; }
 
         [DataMember(Name = "passive")]
-        public ChampionPassive Passive { get; set; }
+        public object Passive { get; set; }
 
         [DataMember(Name = "recommended")]
-        public List<ChampionRecommended> Recommended { get; set; }
+        public List<object> Recommended { get; set; }
     }
 }
