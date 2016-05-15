@@ -56,10 +56,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Champion.cs" />
+    <Compile Include="Models\ChampionDetails.cs" />
     <Compile Include="Models\ChampionInfo.cs" />
+    <Compile Include="Models\ChampionList.cs" />
+    <Compile Include="Models\ChampionPassive.cs" />
+    <Compile Include="Models\ChampionRecommended.cs" />
+    <Compile Include="Models\ChampionSkin.cs" />
+    <Compile Include="Models\ChampionSpell.cs" />
+    <Compile Include="Models\ChampionStats.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\LoLImage.cs" />
+    <Compile Include="Models\RecommenedBlocks.cs" />
+    <Compile Include="Models\SpellVar.cs" />
+    <Compile Include="Services\Requests\ChampionDetailRequest.cs" />
     <Compile Include="Services\Requests\DataService.cs" />
     <Compile Include="Services\Requests\ServiceManager.cs" />
-    <Compile Include="Services\Responses\AllChampions.cs" />
     <Compile Include="ViewControllers\ViewController.cs" />
     <Compile Include="Views\IndexWindow.xaml.cs">
       <DependentUpon>IndexWindow.xaml</DependentUpon>

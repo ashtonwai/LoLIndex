@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush Stretch="UniformToFill" ImageSource="/LoLIndex;component/Assets/Index_BG.jpg"/>
         </Grid.Background>
-        <WrapPanel x:Name="ChampionList" HorizontalAlignment="Left" Height="1029" Margin="10,10,0,0" VerticalAlignment="Top" Width="1892">
+        <WrapPanel x:Name="ChampionsIndex" HorizontalAlignment="Left" Height="1029" Margin="10,10,0,0" VerticalAlignment="Top" Width="1892">
             <!-- CHAMPIONS HERE -->
         </WrapPanel>
 

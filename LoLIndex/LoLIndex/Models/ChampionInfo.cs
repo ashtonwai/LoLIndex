@@ -5,16 +5,16 @@ namespace LoLIndex.Models
     [DataContract]
     public class ChampionInfo
     {
-        [DataMember(Name="id")]
-        public int ChampId { get; set; }
+        [DataMember(Name = "attack")]
+        public int Attack { get; set; }
 
-        [DataMember(Name="title")]
-        public string ChampTitle { get; set; }
+        [DataMember(Name = "defense")]
+        public int Defense { get; set; }
 
-        [DataMember(Name="name")]
-        public string ChampName { get; set; }
+        [DataMember(Name = "magic")]
+        public int Magic { get; set; }
 
-        [DataMember(Name="key")]
-        public string ChampKey { get; set; }
+        [DataMember(Name = "difficulty")]
+        public int Difficulty { get; set; }
     }
 }
