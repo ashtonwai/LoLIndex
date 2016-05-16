@@ -18,7 +18,7 @@ namespace LoLIndex.Models
         public double AttackDamagePerLevel { get; set; }
 
         [DataMember(Name = "attackrange")]
-        public int AttackRange { get; set; }
+        public double AttackRange { get; set; }
 
         [DataMember(Name = "attackspeedoffset")]
         public double AttackSpeedOffset { get; set; }
@@ -42,7 +42,7 @@ namespace LoLIndex.Models
         public double HpRegenPerLevel { get; set; }
 
         [DataMember(Name = "movespeed")]
-        public int MoveSpeed { get; set; }
+        public double MoveSpeed { get; set; }
 
         [DataMember(Name = "mp")]
         public double Mp { get; set; }

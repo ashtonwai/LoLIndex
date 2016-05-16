@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace LoLIndex.Views
@@ -28,11 +29,12 @@ namespace LoLIndex.Views
         {
             foreach (var champion in champions)
             {
-                Image ChampImage = new Image();
+                Button ChampImage = new Button();
                 ChampImage.Width = champion.Image.W * 2;
                 ChampImage.Height = champion.Image.H * 2;
                 ChampImage.ToolTip = champion.Name;
-                ChampImage.Source = new BitmapImage(new Uri($"{imageURI}{champion.Image.Full}"));
+                ChampImage.Background = new ImageBrush(new BitmapImage(new Uri($"{imageURI}{champion.Image.Full}")));
+                ChampImage.Click += (s, e) => { ShowChampionDetail(champion.Id); };
                 ChampionsIndex.Children.Add(ChampImage);
             }
         }
@@ -40,7 +42,8 @@ namespace LoLIndex.Views
         private void ShowChampionDetail(int champId)
         {
             ChampionDetails champDetail = Controller.ChampionDetail(champId);
-            Console.WriteLine(champDetail);
+            ChampionWindow champWindow = new ChampionWindow(champDetail);
+            champWindow.Show();
         }
     }
 }

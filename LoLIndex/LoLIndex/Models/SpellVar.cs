@@ -13,6 +13,6 @@ namespace LoLIndex.Models
         public string Link { get; set; }
 
         [DataMember(Name = "coeff")]
-        public List<float> Coeff { get; set; }
+        public List<double> Coeff { get; set; }
     }
 }

@@ -14,3 +14,5 @@ D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex.exe
 D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\LoLIndex.pdb
 D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\Views\IndexWindow.g.cs
 D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\Views\IndexWindow.baml
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\Views\ChampionWindow.g.cs
+D:\Development\GitHub\LoLIndex\LoLIndex\LoLIndex\obj\Debug\Views\ChampionWindow.baml

@@ -75,6 +75,9 @@
     <Compile Include="Services\Requests\DataService.cs" />
     <Compile Include="Services\Requests\ServiceManager.cs" />
     <Compile Include="ViewControllers\ViewController.cs" />
+    <Compile Include="Views\ChampionWindow.xaml.cs">
+      <DependentUpon>ChampionWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\IndexWindow.xaml.cs">
       <DependentUpon>IndexWindow.xaml</DependentUpon>
     </Compile>
@@ -90,6 +93,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\ChampionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\IndexWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

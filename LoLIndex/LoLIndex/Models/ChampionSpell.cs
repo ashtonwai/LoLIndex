@@ -34,7 +34,7 @@ namespace LoLIndex.Models
         public int MaxRank { get; set; }
 
         [DataMember(Name = "cost")]
-        public List<int> Cost { get; set; }
+        public List<double> Cost { get; set; }
 
         [DataMember(Name = "costType")]
         public string CostType { get; set; }
@@ -43,7 +43,7 @@ namespace LoLIndex.Models
         public string CostBurn { get; set; }
 
         [DataMember(Name = "cooldown")]
-        public List<int> Cooldown { get; set; }
+        public List<double> Cooldown { get; set; }
 
         [DataMember(Name = "cooldownBurn")]
         public string CooldownBurn { get; set; }
@@ -58,7 +58,7 @@ namespace LoLIndex.Models
         public List<SpellVar> Vars { get; set; }
 
         [DataMember(Name = "range")]
-        public List<int> Range { get; set; }
+        public List<double> Range { get; set; }
 
         [DataMember(Name = "rangeBurn")]
         public string RangeBurn { get; set; }
