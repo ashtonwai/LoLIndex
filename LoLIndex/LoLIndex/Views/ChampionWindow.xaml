@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoLIndex.Views"
         mc:Ignorable="d"
-        Title="ChampionWindow" Height="300" Width="300">
-    <Grid>
-        
+        Title="ChampionWindow" Height="748" Width="1223">
+    <Grid Background="Black">
+        <Image x:Name="ChampBG" HorizontalAlignment="Left" Height="717" VerticalAlignment="Top" Width="1215" Source="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg" Opacity="0.5"/>
+        <Image x:Name="ChampProfile" HorizontalAlignment="Left" Height="144" Margin="25,25,0,0" VerticalAlignment="Top" Width="144" Source="http://ddragon.leagueoflegends.com/cdn/6.9.1/img/champion/Aatrox.png"/>
+        <Label x:Name="ChampName" Content="Aatrox" HorizontalAlignment="Left" Margin="183,81,0,0" VerticalAlignment="Top" Width="250" Height="50" Foreground="#FFFFDC00" FontFamily="Times New Roman" FontWeight="Bold" FontSize="42"/>
+        <Label x:Name="ChampTitle" Content="the Barkin Balde" HorizontalAlignment="Left" Margin="183,136,0,0" VerticalAlignment="Top" Width="250" Foreground="#FFFFB900" FontFamily="Times New Roman" FontSize="20"/>
+        <GroupBox x:Name="ChampionInfoBox" Header="Champion Info" HorizontalAlignment="Left" Margin="28,182,0,0" VerticalAlignment="Top" Height="144" Width="315" Foreground="White"/>
+        <Label x:Name="ChampInfo_Attack" Content="Attack" HorizontalAlignment="Left" Margin="43,206,0,0" VerticalAlignment="Top" Width="70" Foreground="Red" FontFamily="Times New Roman" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="ChampInfo_Defense" Content="Defense" HorizontalAlignment="Left" Margin="43,232,0,0" VerticalAlignment="Top" Width="70" Foreground="Lime" FontFamily="Times New Roman" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="ChampInfo_Magic" Content="Magic" HorizontalAlignment="Left" Margin="43,258,0,0" VerticalAlignment="Top" Width="70" FontFamily="Times New Roman" FontWeight="Bold" FontSize="14" Foreground="#FF00E1FF"/>
+        <Label x:Name="ChampInfo_Difficulty" Content="Difficulty" HorizontalAlignment="Left" Margin="43,284,0,0" VerticalAlignment="Top" Width="70" Foreground="#FF9600FF" FontFamily="Times New Roman" FontWeight="Bold" FontSize="14"/>
+        <StackPanel HorizontalAlignment="Left" Height="15" Margin="118,212,0,0" VerticalAlignment="Top" Width="200">
+            <Rectangle x:Name="ChampInfo_AttackBar" Fill="Red" Height="15" Margin="0,0,0,0"/>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="15" Margin="118,237,0,0" VerticalAlignment="Top" Width="200">
+            <Rectangle x:Name="ChampInfo_DefenseBar" Fill="Lime" Height="15" Margin="0,0,0,0"/>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="15" Margin="118,262,0,0" VerticalAlignment="Top" Width="200">
+            <Rectangle  x:Name="ChampInfo_MagicBar" Fill="#FF00E1FF" Height="15" Margin="0,0,0,0"/>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="15" Margin="118,287,0,0" VerticalAlignment="Top" Width="200">
+            <Rectangle x:Name="ChampInfo_DifficultyBar" Fill="#FF9600FF" Height="15" Margin="0,0,0,0"/>
+        </StackPanel>
+        <GroupBox x:Name="SpellsBox" Header="Spells" HorizontalAlignment="Left" Margin="594,3,0,0" VerticalAlignment="Top" Height="697" Width="600" Background="#7F000000" Foreground="White"/>
+        <Image x:Name="Passive_Image" HorizontalAlignment="Left" Height="72" Margin="614,36,0,0" VerticalAlignment="Top" Width="72" Source="http://ddragon.leagueoflegends.com/cdn/6.9.1/img/passive/Aatrox_Passive.png"/>
+        <Label x:Name="Passive_Name" Content="Blood Well" HorizontalAlignment="Left" Margin="704,36,0,0" VerticalAlignment="Top" Width="470" Foreground="Yellow" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <TextBlock x:Name="Passive_Desc" HorizontalAlignment="Left" Margin="705,61,0,0" TextWrapping="Wrap" Text="When using an ability that costs Health, Aatrox stores the self-inflicted damage into the Blood Well. Upon taking fatal damage, Aatrox extracts the blood from the well and recovers it as Health over a brief duration. Additionally, Aatrox gains 1% Attack Speed for every 2% blood that is in the well." VerticalAlignment="Top" Height="80" Width="470" Foreground="White"/>
+        <Image x:Name="SpellQ_Image" HorizontalAlignment="Left" Height="72" Margin="614,162,0,0" VerticalAlignment="Top" Width="72" Source="http://ddragon.leagueoflegends.com/cdn/6.9.1/img/spell/AatroxQ.png"/>
+        <Label x:Name="SpellQ_Name" Content="Dark Flight" HorizontalAlignment="Left" Margin="705,162,0,0" VerticalAlignment="Top" Width="470" Foreground="Yellow" FontFamily="Times New Roman" FontWeight="Bold" FontSize="14"/>
+        <TextBlock x:Name="SpellQ_Desc" HorizontalAlignment="Left" Margin="705,190,0,0" TextWrapping="Wrap" Text="Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact." VerticalAlignment="Top" Height="80" Width="470" Foreground="White"/>
+        <Image x:Name="SpellW_Image" HorizontalAlignment="Left" Height="72" Margin="614,292,0,0" VerticalAlignment="Top" Width="72" Source="http://ddragon.leagueoflegends.com/cdn/6.9.1/img/spell/AatroxW.png"/>
+        <Label x:Name="SpellW_Name" Content="Blood Thrist / Blood Price" HorizontalAlignment="Left" Margin="705,292,0,0" VerticalAlignment="Top" Width="470" Foreground="Yellow" FontFamily="Times New Roman" FontWeight="Bold" FontSize="14"/>
+        <TextBlock x:Name="SpellW_Desc" HorizontalAlignment="Left" Margin="705,323,0,0" TextWrapping="Wrap" Text="While toggled on Aatrox deals bonus damage every third subsequent attack at the expense of his own Health. While toggled off Aatrox restores Health every third subsequent attack." VerticalAlignment="Top" Height="80" Width="470" Foreground="White"/>
+        <Image x:Name="SpellE_Image" HorizontalAlignment="Left" Height="72" Margin="614,423,0,0" VerticalAlignment="Top" Width="72" Source="http://ddragon.leagueoflegends.com/cdn/6.9.1/img/spell/AatroxE.png"/>
+        <Label x:Name="SpellE_Name" Content="Blades of Torment" HorizontalAlignment="Left" Margin="704,423,0,0" VerticalAlignment="Top" Width="470" Foreground="Yellow" FontFamily="Times New Roman" FontWeight="Bold" FontSize="14"/>
+        <TextBlock x:Name="SpellE_Desc" HorizontalAlignment="Left" Margin="705,454,0,0" TextWrapping="Wrap" Text="Aatrox unleashes the power of his blade, dealing damage to enemies hit and slowing them." VerticalAlignment="Top" Height="80" Width="470" Foreground="White"/>
+        <Image x:Name="SpellR_Image" HorizontalAlignment="Left" Height="72" Margin="614,554,0,0" VerticalAlignment="Top" Width="72" Source="http://ddragon.leagueoflegends.com/cdn/6.9.1/img/spell/AatroxR.png"/>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="705,559,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="SpellR_Name" Content="Massacre" HorizontalAlignment="Left" Margin="704,554,0,0" VerticalAlignment="Top" Width="470" Foreground="Yellow" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <TextBlock x:Name="SpellR_Desc" HorizontalAlignment="Left" Margin="705,585,0,0" TextWrapping="Wrap" Text="Aatrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration." VerticalAlignment="Top" Height="80" Width="470" Foreground="White"/>
+        <GroupBox x:Name="LoreBox" Header="Lore" HorizontalAlignment="Left" Margin="28,346,0,0" VerticalAlignment="Top" Height="354" Width="534" Foreground="White">
+            <TextBlock x:Name="LoreText" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox's seemingly living blade drinks in their blood, empowering him and fueling his brutal, elegant campaign of slaughter.&lt;br&gt;&lt;br&gt;The earliest tale of Aatrox is as old as recorded history. It tells of a war between two great factions remembered only as the Protectorate and the Magelords. Over time, the Magelords won a series of crushing victories, leaving them on the brink of obliterating their sworn enemy forever. On the day of their final confrontation, the Protectorate army found themselves outnumbered, exhausted, and poorly equipped. They braced for inevitable defeat.&lt;br&gt;&lt;br&gt;Just when all hope seemed lost, Aatrox appeared among the ranks of the Protectorate. With but a few words, he urged the soldiers to fight to the last before throwing himself into battle. His presence inspired the desperate warriors. At first, they could only watch in awe as this unknown hero cleaved through their enemies, his body and blade moving in unison as if one being. Soon, the warriors found themselves imbued with a potent thirst for battle. They followed Aatrox into the fray, each fighting with the furious strength of ten until they had won a most unlikely victory.&lt;br&gt;&lt;br&gt;Aatrox vanished after that battle, but the Protectorate army's newfound fury did not. Their surprising triumph led to many more until they were able to finally return home victorious. Their countrymen hailed them as heroes, but though they had saved their entire civilization from destruction, darkness lingered in the mind of each warrior. Something within them had changed. Over time, their memories of battle faded, only to be replaced with a grim revelation: their acts of heroism were, in fact, brutal atrocities committed by their own hands.&lt;br&gt;&lt;br&gt;Tales like these appear among the myths of many cultures. If they are all to be believed, Aatrox's presence has changed the course of some of the most important wars in history. Though these stories remember him as a savior in dark times, Aatrox's true legacy may be a world filled with conflict and strife.&lt;br&gt;&lt;br&gt;''Some fight for honor, some fight for glory. It matters only that you fight.''&lt;br&gt;-- Aatrox" VerticalAlignment="Top" Height="310" Width="500" FontSize="10"/>
+        </GroupBox>
+
     </Grid>
 </Window>
